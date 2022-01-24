@@ -1,0 +1,217 @@
+body{
+    background-color: rgb(180, 224, 238);
+    margin: 0px;
+}
+
+/* .intro::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://st.depositphotos.com/1012061/1823/i/600/depositphotos_18238189-stock-photo-lake-with-stacked-stones.jpg') no-repeat center center/cover;
+    opacity: 50%;
+} */
+
+.navbar{
+    border: 2px solid rgb(216, 63, 63);
+    padding: 10px;
+    background-color: rgb(154, 209, 99);
+    font-size: 1.2rem;
+}
+
+#searchbox{
+    float:right;
+    position:relative;
+    bottom: 3vw;
+    height: 1.25vw;
+    width: 12.5vw;
+
+}
+
+.intro{
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('https://media.istockphoto.com/photos/vignette-watercolor-texture-background-handpainted-aqua-brush-strokes-picture-id1207792106?b=1&k=20&m=1207792106&s=170667a&w=0&h=KZxHhvnnKG_UqMopu_RS6zL64OCeNo4B8ItMj6oOySA=') no-repeat center center/cover;
+}
+
+#starting{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+#title{
+    margin: 0px;
+    color: rgb(125, 37, 207);
+    font-family: cursive;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-decoration-line:underline;
+    text-decoration-color: rgb(51, 3, 63);
+    text-decoration-thickness: 5px;
+}
+
+#caption{
+    background-color: rgb(111 217 195);
+    display: inline;
+    color: rgb(207, 41, 75);
+    padding: 10px;
+    font-style: italic;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(19, 110, 72);
+    font-size: 1.2rem;
+}
+
+.list{
+    display: inline;
+    padding: 10px;
+    margin: 30 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#dropdown{
+    text-decoration: underline;
+    color: blue;
+}
+
+.dropdown_content{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 55px;
+    left: 120px;
+    background-color: rgb(154, 209, 99);
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    list-style-type: none;
+    box-shadow: 5px 5px rgb(134, 197, 71);
+}
+
+#dropdown:hover .dropdown_content{
+    display: block;
+}
+
+
+.p1{
+    display: flex;
+    /* padding: 50px 50px; */
+    /* margin: 10px 10px; */
+    font-size: 2rem;
+    color: rgb(221, 24, 162);
+    height: 18.75rem;
+    width: 100%;
+    background: url('https://image.scoopwhoop.com/q30/s4.scoopwhoop.com/wp-content/uploads/2014/03/leh.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px rgb(228, 130, 212);
+}
+
+.quicksurvey{
+    /* border: 5px solid black; */
+    /* height: 632px; */
+    /* width: 20%; */
+    background-color: rgb(138, 198, 216);
+    box-shadow: 5px 5px rgb(112, 164, 180);
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+.options{
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.container{
+    /* width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 5px solid black; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item{
+    background-color: rgb(115, 238, 135);
+    padding: 10px;
+    margin: 10px 10px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgb(218, 61, 92);
+    box-shadow: 5px 5px 3px rgb(34, 128, 21);
+
+}
+
+.readmore{
+    text-align: right;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    color: blueviolet;
+    font-size: 18px;
+}
+
+#image1{
+    width: 280px;
+    height: 370px;
+    width: 100%;
+}
+
+#suggestionbox{
+    width: 13.0vw;
+    height: 1.0vw;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px 10px;
+    /* border: 5px solid red; */
+    background-color: rgb(24, 22, 22);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 1.0vw; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box{
+    margin: 10px;
+    padding: 10px;
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width : 600px){
+    .content{
+        display: grid;
+        /* border: 5px solid rgb(172, 71, 71); */
+        align-items: center;
+        justify-content: center;
+        font-size: 1.0rem;
+        grid-template-rows: repeat (2, auto);
+        /* width: 100%; */
+        /* margin: 0px; */
+    }
+}
+
+@media only screen and (min-width:600px){
+    .content{
+        display: grid;
+        /* border: 5px solid rgb(172, 71, 71); */
+        align-items: center;
+        justify-content: center;
+        font-size: 1.0rem;
+        grid-template-columns: 1fr 4fr;
+        /* width: 100%; */
+        /* margin: 0px; */
+    }
+}
